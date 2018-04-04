@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "613707235112",
+    "firebase_url": "https://survey-app-a0bea.firebaseio.com",
+    "project_id": "survey-app-a0bea",
+    "storage_bucket": "survey-app-a0bea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:613707235112:android:34f5f89b6aa81a44",
+        "android_client_info": {
+          "package_name": "survey.suresh.com.survey"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "613707235112-cmc4f98eoclfflpdp2k426br3r50entg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "survey.suresh.com.survey",
+            "certificate_hash": "3c99874fa0f17be110a530ad3e3c6ad968c394d4"
+          }
+        },
+        {
+          "client_id": "613707235112-von1gtho1lrjin0asf49br8uaul10jfu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_Bdt1oJVoIEAcl3vWeRwmwpT33m5OMrc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "613707235112-von1gtho1lrjin0asf49br8uaul10jfu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
