@@ -13,4 +13,9 @@
         <item name="android:windowBackground">@color/colorPrimary</item>
     </style>
 
+    <style name="btn" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
 </resources>

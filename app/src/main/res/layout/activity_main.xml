@@ -7,13 +7,70 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:layout_gravity="center"
-    android:gravity="center">
+    android:background="@color/colorPrimaryDark"
+    android:weightSum="3">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_weight="2"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="How will you rate your overall experience at the Store?"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:fontFamily="casual" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/q1_ans_1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/angry" />
+
+            <ImageButton
+                android:id="@+id/q1_ans_2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/normal" />
+
+            <ImageButton
+                android:id="@+id/q1_ans_3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/happy" />
+
+        </LinearLayout>
+
+    </LinearLayout>
 
     <TabHost
         android:id="@+id/tabhost"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_weight="1">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -26,10 +83,12 @@
                 android:layout_height="0dp"
                 android:visibility="invisible" />
 
+
             <FrameLayout
                 android:id="@android:id/tabcontent"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
+
 
                 <LinearLayout
                     android:id="@+id/tab2"
@@ -39,143 +98,114 @@
                     android:layout_gravity="center"
                     android:gravity="center">
 
-                    <TextView
+                    <Button
+                        android:id="@+id/a1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginBottom="5dp"
-                        android:layout_marginTop="25dp"
-                        android:gravity="center"
-                        android:text="Pick your favorite sport"
-                        android:textSize="24sp"
-                        android:textStyle="bold"
-                        app:fontFamily="casual" />
+                        android:text="The Service was not up to standard"
+                        android:theme="@style/btn" />
 
-                    <ListView
-                        android:id="@+id/sportslist"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:divider="#dfdfdf"
-                        android:dividerHeight="1dp"
-                        android:layout_margin="15dp"/>
+                    <Button
+                        android:id="@+id/a2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="I was not happy with the range of products"
+                        android:theme="@style/btn" />
+
+                    <Button
+                        android:id="@+id/a3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="My product size was not available"
+                        android:theme="@style/btn" />
+
+                    <Button
+                        android:id="@+id/a4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="I was not pleased with the cleanliness of the store"
+                        android:theme="@style/btn" />
+
+                    <Button
+                        android:id="@+id/a5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="I was not able to experience my product before buying"
+                        android:theme="@style/btn" />
+
+                    <Button
+                        android:id="@+id/a6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="The cashiering process was not efficient"
+                        android:theme="@style/btn" />
 
                 </LinearLayout>
-
 
                 <LinearLayout
                     android:id="@+id/tab1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:padding="40dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginBottom="10dp"
-                        android:gravity="center"
-                        android:text="How will you rate your overall experience at the Store?"
-                        android:textSize="24sp"
-                        android:textStyle="bold"
-                        app:fontFamily="casual" />
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <ImageButton
-                            android:id="@+id/q1_ans_1"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:src="@drawable/angry"
-                            android:scaleType="fitXY"
-                            android:background="@null"
-                            android:layout_marginRight="10dp"/>
-
-                        <ImageButton
-                            android:id="@+id/q1_ans_2"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:src="@drawable/normal"
-                            android:scaleType="fitXY"
-                            android:background="@null"
-                            android:layout_marginRight="10dp"/>
-
-                        <ImageButton
-                            android:id="@+id/q1_ans_3"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:src="@drawable/happy"
-                            android:scaleType="fitXY"
-                            android:background="@null"/>
-
-                    </LinearLayout>
-
-                </LinearLayout>
+                    android:orientation="vertical"></LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/tab3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:padding="40dp">
+                    android:orientation="vertical">
 
-                    <TextView
+                    <Button
+                        android:id="@+id/a7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginBottom="10dp"
-                        android:gravity="center"
-                        android:text="How satisfied were you with the range we offered for the particular sport?"
-                        android:textSize="24sp"
-                        android:textStyle="bold"
-                        app:fontFamily="casual" />
+                        android:text="The service was not upto standard"
+                        android:theme="@style/btn" />
 
-                    <LinearLayout
+                    <Button
+                        android:id="@+id/a8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal">
+                        android:text="I was not happy with the range of products"
+                        android:theme="@style/btn" />
 
-                        <ImageButton
-                            android:id="@+id/q3_ans_1"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:src="@drawable/angry"
-                            android:scaleType="fitXY"
-                            android:background="@null"
-                            android:layout_marginRight="10dp"/>
+                    <Button
+                        android:id="@+id/a9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="My product size was not available"
+                        android:theme="@style/btn" />
 
-                        <ImageButton
-                            android:id="@+id/q3_ans_2"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:src="@drawable/normal"
-                            android:scaleType="fitXY"
-                            android:background="@null"
-                            android:layout_marginRight="10dp"/>
+                    <Button
+                        android:id="@+id/a10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="I was not pleased with the cleanliness of the store"
+                        android:theme="@style/btn" />
 
-                        <ImageButton
-                            android:id="@+id/q3_ans_3"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:src="@drawable/happy"
-                            android:scaleType="fitXY"
-                            android:background="@null"/>
+                    <Button
+                        android:id="@+id/a11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="I was not able to experience my product before buying"
+                        android:theme="@style/btn" />
 
-                    </LinearLayout>
+                    <Button
+                        android:id="@+id/a12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="The cashiering process was not efficient"
+                        android:theme="@style/btn" />
 
                 </LinearLayout>
 
-
-
-
             </FrameLayout>
+
         </LinearLayout>
+
     </TabHost>
+
 </LinearLayout>
